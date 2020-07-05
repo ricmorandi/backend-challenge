@@ -12,7 +12,8 @@ class UserList{
                         U.AccessLevel,
                         U.PhoneNumber,
                         U.LastUpdate,
-                        U.ExternalID 
+                        U.ExternalID,
+                        U.Senha 
         FROM USERS U";
         $query_array = mysqli_fetch_all(mysqli_query($conn,$query));
         for($i=0; $i < count($query_array); $i++){

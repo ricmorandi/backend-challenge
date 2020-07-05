@@ -13,7 +13,7 @@
 
         echo "<script type='text/javascript'>
         
-        alert('Telefone já cadastrado');
+        alert('Dados inseridos incorretamente ou já presentes no banco');
         
         window.location='../cadastro.html';
 

@@ -8,6 +8,11 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/default.css" type="text/css">
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/verificar.js"></script>
+
 </head>
 
 <body>
@@ -27,7 +32,8 @@
                     <input type="text" name="nome" id="nome" class="texto">
                     <label for="phone"> Telefone*</label>
                     <br>
-                    <input type="text" name="phone" id="phone" onkeypress="verificaTelefone(cad.phone);" class="texto">
+                    <input type="text" name="phone" id="phone" class="texto" maxlength="14" placeholder="+5531999999999"
+                     onkeypress="permiteApenasNumeros(this)">
                     <label for="pass"> Senha</label>
                     <br>
                     <input type="password" name="pass" id="pass" placeholder="Insira uma senha" class="texto">
@@ -47,9 +53,7 @@
     </div>
 </body>
 <footer>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/verificar.js"></script>
+
 </footer>
 
 </html>
