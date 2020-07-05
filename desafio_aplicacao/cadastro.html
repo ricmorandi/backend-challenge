@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Desafio de aplicação</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/default.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>Cadastro de usuário</h2>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <form name="cad" action="./conn/cadastro.php" method="POST"> 
+                    <label for="nome"> Nome do usuário*</label>
+                    <br>
+                    <input type="text" name="nome" id="nome" class="texto">
+                    <label for="phone"> Telefone*</label>
+                    <br>
+                    <input type="text" name="phone" id="phone" onkeypress="verificaTelefone(cad.phone);" class="texto">
+                    <label for="pass"> Senha</label>
+                    <br>
+                    <input type="password" name="pass" id="pass" placeholder="Insira uma senha" class="texto">
+                    <p> Selecione o tipo de usuário</p>
+                    <label for="free" style="margin-right: 15px;" checked>
+                    <input type="radio" id="free" name="accessLevel" value="free" checked>Free</label>
+                    <label for="premium">
+                    <input type="radio" id="premium" name="accessLevel" value="premium">Premium</label>
+                    <br>
+                    <button class="btn btn-primary" type="button" onclick="location.href='./';">Voltar</button>
+
+                    <input type="submit" class="btn btn-primary">
+                </form>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</body>
+<footer>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/verificar.js"></script>
+</footer>
+
+</html>
